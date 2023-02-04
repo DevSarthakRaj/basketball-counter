@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">
+        <h2>HOME</h2>
+
+        <p class="score" id="home-score">0</p>
+        <div class="buttons">
+          <button class="button" id="button-home-1" onclick="homeAddOne()">
+            +1
+          </button>
+          <button class="button" id="button-home-2" onclick="homeAddTwo()">
+            +2
+          </button>
+          <button class="button" id="button-home-3" onclick="homeAddThree()">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="guest">
+        <h2>GUEST</h2>
+        <p class="score" id="guest-score">0</p>
+        <div class="buttons">
+          <button class="button" id="button-guest-1" onclick="guestAddOne()">
+            +1
+          </button>
+          <button class="button" id="button-guest-2" onclick="guestAddTwo()">
+            +2
+          </button>
+          <button class="button" id="button-guest-3" onclick="guestAddThree()">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="reset" id="reset" onclick="reset()">Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>
